@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pizza grill</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+      <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+        <a href="#" class="w3-bar-item w3-button">ГЛАВНАЯ</a>
+        <a href="#menu" class="w3-bar-item w3-button">МЕНЮ</a>
+        <a href="#about" class="w3-bar-item w3-button">О НАС</a>
+        <a href="#myMap" class="w3-bar-item w3-button">КОНТАКТЫ</a>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-bottomleft w3-padding">
+        <span class="w3-tag w3-xlarge">Мы работаем с 10:00 до 24:00</span>
+      </div>
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-white w3-hide-small" style="font-size:100px">тонкая<br>GRILL PIZZA</span>
+        <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>тонкая<br>GRILL PIZZA</b></span>
+        <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Посмотреть меню </a></p>
+      </div>
+    </header>
+  
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pasta</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Garnish</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Маргарита</b> <span class="w3-right w3-tag w3-dark-grey w3-round">25 BYN</span></h1>
+      <p class="w3-text-grey">Свежие томаты, моцарелла, базелик</p>
+      <hr>
+   
+      <h1><b>Формаджио</b> <span class="w3-right w3-tag w3-dark-grey w3-round">30 BYN</span></h1>
+      <p class="w3-text-grey">Сыр (моцарелла, пармезан, альметте, маскарпоне)</p>
+      <hr>
+      
+      <h1><b>Чикен- pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">15 BYN</span></h1>
+      <p class="w3-text-grey">Свежие томаты, моцарелла, курица, лук</p>
+      <hr>
+
+      <h1><b>Экзотик- pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">20 BYN</span></h1>
+      <p class="w3-text-grey">Свежие томаты, моцарелла, ананас, бекон, базилик</p>
+      <hr>
+
+      <h1><b>Пипперони</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">30 BYN</span></h1>
+      <p class="w3-text-grey">FСвежие томаты, моцарелла, пипперони, курица, говядина, острый соус</p>
+      <hr>
+
+      <h1><b>Парма</b> <span class="w3-tag w3-grey w3-round">New!</span><span class="w3-right w3-tag w3-dark-grey w3-round">25 BYN</span></h1>
+      <p class="w3-text-grey">Свежие томаты, моцарелла, бекон, руккола</p>
+    </div>
+
+
+
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Pasta</b> <span class="w3-tag w3-grey w3-round">Итальяно</span> <span class="w3-right w3-tag w3-dark-grey w3-round">15 BYN</span></h1>
+      <p class="w3-text-grey">SСпециальный соус, моцарелла, пармезан, говядина</p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">15 BYN</span></h1>
+      <p class="w3-text-grey">Равиоли с сырной начинкой</p>
+      <hr>
+      
+      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">10 BYN</span></h1>
+      <p class="w3-text-grey">Свежие томаты, лук, говядина</p>
+      <hr>
+
+      <h1><b>Морская pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">30 BYN</span></h1>
+      <p class="w3-text-grey">Мидии, устрицы, кальмар</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Боул</b> <span class="w3-tag w3-grey w3-round"></span>NEW!<span class="w3-right w3-tag w3-dark-grey w3-round">10 BYN</span></h1>
+      <p class="w3-text-grey">рис, доп. ингридиенты на выбор</p>
+      <hr>
+   
+      <h1><b>Брускетта</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5 BYN</span></h1>
+      <p class="w3-text-grey">Цельнозерновой хлеб, томаты, лук, чеснок, соус</p>
+      <hr>
+      
+      <h1><b>Чесночный хлеб</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3 BYN</span></h1>
+      <p class="w3-text-grey">Чиабатта, чеснок, лук</p>
+      <hr>
+      
+      <h1><b>Салат</b> <span class="w3-right w3-tag w3-dark-grey w3-round">10 BYN</span></h1>
+      <p class="w3-text-grey">Свежие томаты, моцарелла</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">О нас</h1>
+    <p>Ежегодно ресторан &reg;Grill pizza посещают около 1 тысячи гостей. Рестораны  &reg;Grill pizza являются наглядным примером, витриной стандартов вкуса и качества на которую наши партнеры могут ориентироваться в качестве результата, оценить который смогут посетители и покупатели партнеров.</p>
+    <p><strong>Кто шеф?</strong> Иванов Виталий<img src="https://thumbs.dreamstime.com/z/%D0%B4%D0%B5%D1%82%D0%B0-%D0%B8-%D1%88%D0%B5%D1%84-%D0%BF%D0%BE%D0%B2%D0%B0%D1%80%D0%B0-%D0%B8-%D0%BA%D1%83%D1%85%D0%BD%D0%B8-%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D0%B0-39495153.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Мы гордимся своим интерьером</p>
+    <img src="https://cdn.pixabay.com/photo/2020/09/17/12/41/cafe-5579069_1280.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Время работы</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Понедельник закрыты</p>
+        <p>Вторник 10.00 - 24.00</p>
+        <p>Среда 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Четвер 10:00 - 23:00</p>
+        <p>Пятница 10:00 - 23:00</p>
+        <p>Воскресенье закрыты</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+<!-- Image of location/map -->
+<img src="https://travelask.ru/system/embedded_map_attachments/files/000/000/753/original/%D0%92%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA.jpg"  class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Контакты</h1>
+    <p>Не нашли нас? Позвоните по тел +37533000000</p>
+    <p><span class="w3-tag">Обратите внимание!</span> Мы оказываем услуги кейтеринга!</p>
+    <p class="w3-xxlarge"><strong>Хотите заказать столик?</strong> введите данные:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Как Вас зовут?" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Сколько человек?" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Дата и время" required name="date" value="2023-10-19T12:50"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Сообщение для нас" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">ОТПРАВИТЬ</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Сайты для всех! <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">DzmitryR</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
